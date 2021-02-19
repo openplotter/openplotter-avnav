@@ -1,3 +1,9 @@
+openplotter-avnav (2.1.2-beta) bionic; urgency=medium
+
+  * default avnav port to 8081 on new installation
+
+ -- e-sailing <e.minus.sailing@gmail.com>  Fri, 19 Feb 2021 13:04:34 +0100
+
 openplotter-avnav (2.1.1-beta) bionic; urgency=medium
 
   * Add avnav-mapproxy-plugin

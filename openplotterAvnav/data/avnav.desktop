@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Avnav
-Exec=x-www-browser http://localhost:8080
+Exec=x-www-browser http://localhost:8081
 Icon=sailboat48r
 StartupNotify=true
 Terminal=false

@@ -7,7 +7,7 @@
 
   <service  protocol="ipv4">
     <type>_http._tcp</type>
-    <port>8080</port>
+    <port>8981</port>
     <txt-record>txtvers=1</txt-record>
     <txt-record>swname=openplotter-avnav</txt-record>
   </service>
