@@ -110,7 +110,7 @@ class MyFrame(wx.Frame):
 		}
 		self.appsDict.append(app)
 		self.OSENCport = 8082
-		self.AVNport = 8080
+		self.AVNport = 8081
 		self.updatePort = 8085
 		self.xmlDocFile = self.conf.home +'/avnav/data/avnav_server.xml'
 		self.xmlload = False
@@ -122,7 +122,7 @@ class MyFrame(wx.Frame):
 			if AVNHttpS!=None:
 				if 'httpPort' in AVNHttpS.attrib:
 					try:
-						self.AVNport = int(AVNHttpS.attrib['httpPort'] or 8080)
+						self.AVNport = int(AVNHttpS.attrib['httpPort'] or 8081)
 					except: pass
 			sys_ocharts = self.xmlDoc.find('.//system-ocharts')
 			if sys_ocharts!=None:
@@ -232,7 +232,7 @@ class MyFrame(wx.Frame):
 		portLabel = wx.StaticText(self.settings, label=_('Port'))
 		self.port = wx.SpinCtrl(self.settings, 101, min=80, max=65536, initial=self.AVNport)
 		self.port.Bind(wx.EVT_SPINCTRL, self.onPort)
-		portText1 = wx.StaticText(self.settings, label=_('The AVNAV default port is 8080'))
+		portText1 = wx.StaticText(self.settings, label=_('The openplotter AVNAV default port is 8081'))
 		portText2 = wx.StaticText(self.settings, label=_('Port 80 does not require ":8080" in browsers and app interfaces'))
 
 		portLabel2 = wx.StaticText(self.settings, label=_('Port'))
